@@ -13,7 +13,7 @@
     ************************************/
 
     var numeral,
-        VERSION = '1.5.3',
+        VERSION = '1.5.4',
         // internal storage for language config files
         languages = {},
         currentLanguage = 'en',
@@ -126,8 +126,9 @@
     }
 
     function formatCurrency (n, format, roundingFunction) {
-    	if(format == '$')
-        	format = languages[currentLanguage].currency.format ? languages[currentLanguage].currency.format : format;
+        if(format === '$'){
+            format = languages[currentLanguage].currency.format ? languages[currentLanguage].currency.format : format;
+        }
 
         var symbolIndex = format.indexOf('$'),
             openParenIndex = format.indexOf('('),
@@ -655,24 +656,24 @@
         },
 
         currency : function(inputString, roundingFunction){
-        	return formatNumeral(this, 
+            return formatNumeral(this, 
                 inputString ? inputString : '$', 
                 (roundingFunction !== undefined) ? roundingFunction : Math.round
             );	
         },
 
         abbr : function(){
-        	return formatNumeral(this,
-        		'a',
-        		Math.round
-        	);
+            return formatNumeral(this,
+                'a',
+                Math.round
+            );
         },
 
         ordinal : function(){
-        	return formatNumeral(this,
-        		'o',
-        		Math.round
-        	);
+            return formatNumeral(this,
+                'o',
+                Math.round
+            );
         }
 
     };

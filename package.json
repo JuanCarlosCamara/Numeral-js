@@ -1,12 +1,12 @@
 {
   "name": "numeral",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Format and manipulate numbers.",
   "homepage": "http://numeraljs.com",
   "author": {
-    "name": "Adam Draper",
-    "email": "adamwdraper@gmail.com",
-    "url": "http://github.com/adamwdraper"
+    "name": "Juan Carlos Cámara",
+    "email": "jc.cache@gmail.com",
+    "url": "http://github.com/JuanCarlosCamara"
   },
   "keywords": [
     "numeral",

@@ -42,6 +42,12 @@ See [the english unit tests](https://github.com/adamwdraper/Numeral-js/blob/mast
 
 # Changelog
 
+### 1.5.4
+
+Added currency default format property into language files.
+
+Added native functions for currency, ordinal and abbrevations. 
+
 ### 1.5.3
 
 Added currency symbol to optionally appear before negative sign / open paren

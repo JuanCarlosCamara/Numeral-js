@@ -126,6 +126,9 @@
     }
 
     function formatCurrency (n, format, roundingFunction) {
+    	if(format == '$')
+        	format = languages[currentLanguage].currency.format ? languages[currentLanguage].currency.format : format;
+
         var symbolIndex = format.indexOf('$'),
             openParenIndex = format.indexOf('('),
             minusSignIndex = format.indexOf('-'),
@@ -649,6 +652,27 @@
 
         difference : function (value) {
             return Math.abs(numeral(this._value).subtract(value).value());
+        },
+
+        currency : function(inputString, roundingFunction){
+        	return formatNumeral(this, 
+                inputString ? inputString : '$', 
+                (roundingFunction !== undefined) ? roundingFunction : Math.round
+            );	
+        },
+
+        abbr : function(){
+        	return formatNumeral(this,
+        		'a',
+        		Math.round
+        	);
+        },
+
+        ordinal : function(){
+        	return formatNumeral(this,
+        		'o',
+        		Math.round
+        	);
         }
 
     };

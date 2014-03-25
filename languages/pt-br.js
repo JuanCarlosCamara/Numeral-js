@@ -19,7 +19,8 @@
             return 'º';
         },
         currency: {
-            symbol: 'R$'
+            symbol: 'R$',
+            format: '$0,0.00'
         }
     };
 

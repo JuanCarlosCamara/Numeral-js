@@ -19,7 +19,8 @@
             return number === 1 ? 'er' : 'e';
         },
         currency: {
-            symbol: 'CHF'
+            symbol: 'CHF',
+            format: '0,0.00$'
         }
     };
 

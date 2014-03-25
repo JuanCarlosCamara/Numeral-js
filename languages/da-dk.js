@@ -19,7 +19,8 @@
             return '.';
         },
         currency: {
-            symbol: 'DKK'
+            symbol: 'DKK',
+            format: '0,0.00$'
         }
     };
 

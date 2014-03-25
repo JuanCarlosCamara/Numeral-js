@@ -20,7 +20,8 @@
             return ''; 
         },
         currency: {
-            symbol: '\u20B4'
+            symbol: '\u20B4',
+            format: '0,0.00$'
         }
     };
 

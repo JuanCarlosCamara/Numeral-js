@@ -22,7 +22,8 @@
             return '.';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 

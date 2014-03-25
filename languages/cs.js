@@ -19,7 +19,8 @@
             return '.';
         },
         currency: {
-            symbol: 'Kč'
+            symbol: 'Kč',
+            format: '0,0.00$'
         }
     };
 

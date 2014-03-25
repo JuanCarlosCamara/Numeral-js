@@ -23,7 +23,8 @@
                 (b === 3) ? 'rd' : 'th';
         },
         currency: {
-            symbol: '£'
+            symbol: '£',
+            format: '$0,0.00'
         }
     };
 

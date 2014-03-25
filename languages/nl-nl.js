@@ -20,7 +20,8 @@
             return (number !== 0 && remainder <= 1 || remainder === 8 || remainder >= 20) ? 'ste' : 'de';
         },
         currency: {
-            symbol: '€ '
+            symbol: '€ ',
+            format: '0,0.00$'
         }
     };
 

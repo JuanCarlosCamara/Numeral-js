@@ -24,7 +24,8 @@
                             (b === 9) ? 'no' : 'to';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 

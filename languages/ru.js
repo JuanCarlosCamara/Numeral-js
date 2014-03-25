@@ -22,7 +22,8 @@
             return '.'; 
         },
         currency: {
-            symbol: 'руб.'
+            symbol: 'руб.',
+            format: '0,0.00$'
         }
     };
 

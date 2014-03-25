@@ -19,7 +19,8 @@
             return '.';
         },
         currency: {
-            symbol: 'PLN'
+            symbol: 'PLN',
+            format: '0,0.00$'
         }
     };
 

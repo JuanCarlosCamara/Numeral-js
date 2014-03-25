@@ -19,7 +19,8 @@
             return number === 1 ? 'er' : 'e';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 

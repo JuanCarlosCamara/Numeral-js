@@ -19,7 +19,8 @@
             return '.';
         },
         currency: {
-            symbol: ' Ft'
+            symbol: ' Ft',
+            format: '0,0.00$'
         }
     };
 

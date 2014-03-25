@@ -19,7 +19,8 @@
             return '.';
         },
         currency: {
-            symbol: 'CHF'
+            symbol: 'CHF',
+            format: '0,0.00$'
         }
     };
 

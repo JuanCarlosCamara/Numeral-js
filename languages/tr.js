@@ -52,7 +52,8 @@
               return suffixes[a] || suffixes[b] || suffixes[c];
             },
             currency: {
-                symbol: '\u20BA'
+                symbol: '\u20BA',
+                format: '0,0.00$'
             }
         };
 

@@ -20,7 +20,7 @@
         },
         currency: {
             symbol: '¥',
-            format: '$0,0.00'
+            format: '$0,0'
         }
     };
 

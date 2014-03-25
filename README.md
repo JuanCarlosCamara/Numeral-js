@@ -42,6 +42,10 @@ See [the english unit tests](https://github.com/adamwdraper/Numeral-js/blob/mast
 
 # Changelog
 
+### 1.5.5
+
+Added currency default format property into all language files. 
+
 ### 1.5.4
 
 Added currency default format property into language files.

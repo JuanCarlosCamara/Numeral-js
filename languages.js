@@ -20,7 +20,8 @@
             return (number !== 0 && remainder <= 1 || remainder === 8 || remainder >= 20) ? 'ste' : 'de';
         },
         currency: {
-            symbol: '€ '
+            symbol: '€ ',
+            format: '0,0.00$'
         }
     };
 
@@ -54,7 +55,8 @@
             return '.';
         },
         currency: {
-            symbol: '¥'
+            symbol: '¥',
+            format: '$0,0.00'
         }
     };
 
@@ -89,7 +91,8 @@
             return '.';
         },
         currency: {
-            symbol: 'Kč'
+            symbol: 'Kč',
+            format: '0,0.00$'
         }
     };
 
@@ -124,7 +127,8 @@
             return '.';
         },
         currency: {
-            symbol: 'DKK'
+            symbol: 'DKK',
+            format: '0,0.00$'
         }
     };
 
@@ -158,7 +162,8 @@
             return '.';
         },
         currency: {
-            symbol: 'CHF'
+            symbol: 'CHF',
+            format: '0,0.00$'
         }
     };
 
@@ -192,7 +197,8 @@
             return '.';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -230,7 +236,8 @@
                 (b === 3) ? 'rd' : 'th';
         },
         currency: {
-            symbol: '£'
+            symbol: '£',
+            format: '$0,0.00'
         }
     };
 
@@ -269,7 +276,8 @@
                             (b === 9) ? 'no' : 'to';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -309,7 +317,8 @@
 		(b === 9) ? 'no' : 'to';
         },
         currency: {
-            symbol: '$'
+            symbol: '$',
+            format: '$0,0.00'
         }
     };
 
@@ -347,7 +356,8 @@
             return '.';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -382,7 +392,8 @@
             return '.';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -417,7 +428,8 @@
             return number === 1 ? 'er' : 'e';
         },
         currency: {
-            symbol: '$'
+            symbol: '$',
+            format: '$0,0.00'
         }
     };
 
@@ -451,7 +463,8 @@
             return number === 1 ? 'er' : 'e';
         },
         currency: {
-            symbol: 'CHF'
+            symbol: 'CHF',
+            format: '0,0.00$'
         }
     };
 
@@ -486,7 +499,8 @@
             return number === 1 ? 'er' : 'e';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -520,7 +534,8 @@
             return '.';
         },
         currency: {
-            symbol: ' Ft'
+            symbol: ' Ft',
+            format: '0,0.00$'
         }
     };
 
@@ -554,7 +569,8 @@
             return 'º';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -588,7 +604,8 @@
             return '.';
         },
         currency: {
-            symbol: '¥'
+            symbol: '¥',
+            format: '$0,0'
         }
     };
 
@@ -624,7 +641,8 @@
             return (number !== 0 && remainder <= 1 || remainder === 8 || remainder >= 20) ? 'ste' : 'de';
         },
         currency: {
-            symbol: '€ '
+            symbol: '€ ',
+            format: '0,0.00$'
         }
     };
 
@@ -658,7 +676,8 @@
             return '.';
         },
         currency: {
-            symbol: 'PLN'
+            symbol: 'PLN',
+            format: '0,0.00$'
         }
     };
 
@@ -692,7 +711,8 @@
             return 'º';
         },
         currency: {
-            symbol: 'R$'
+            symbol: 'R$',
+            format: '$0,0.00'
         }
     };
 
@@ -726,7 +746,8 @@
             return 'º';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -762,7 +783,8 @@
             return '.'; 
         },
         currency: {
-            symbol: '\u20B4'
+            symbol: '\u20B4',
+            format: '0,0.00$'
         }
     };
 
@@ -800,7 +822,8 @@
             return '.'; 
         },
         currency: {
-            symbol: 'руб.'
+            symbol: 'руб.',
+            format: '0,0.00$'
         }
     };
 
@@ -835,7 +858,8 @@
             return '.';
         },
         currency: {
-            symbol: '€'
+            symbol: '€',
+            format: '0,0.00$'
         }
     };
 
@@ -870,7 +894,8 @@
             return '.';
         },
         currency: {
-            symbol: '฿'
+            symbol: '฿',
+            format: '$0,0.00'
         }
     };
 
@@ -938,7 +963,8 @@
               return suffixes[a] || suffixes[b] || suffixes[c];
             },
             currency: {
-                symbol: '\u20BA'
+                symbol: '\u20BA',
+                format: '0,0.00$'
             }
         };
 
@@ -974,7 +1000,8 @@
             return ''; 
         },
         currency: {
-            symbol: '\u20B4'
+            symbol: '\u20B4',
+            format: '0,0.00$'
         }
     };
 

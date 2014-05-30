@@ -13,7 +13,7 @@
     ************************************/
 
     var numeral,
-        VERSION = '1.5.4',
+        VERSION = '1.5.6',
         // internal storage for language config files
         languages = {},
         currentLanguage = 'en',
@@ -71,6 +71,8 @@
             output = formatPercentage(n, format, roundingFunction);
         } else if (format.indexOf(':') > -1) { // time
             output = formatTime(n, format);
+        } else if (format.indexOf('t') > -1){
+            output = formatTemperature(n, format, roundingFunction);
         } else { // plain ol' numbers or bytes
             output = formatNumber(n._value, format, roundingFunction);
         }
@@ -174,6 +176,29 @@
                 output = output + space + languages[currentLanguage].currency.symbol;
             }
         }
+
+        return output;
+    }
+
+    function formatTemperature (n, format, roundingFunction) {
+        if(format === 't'){
+            format = languages[currentLanguage].temperature.format ? languages[currentLanguage].temperature.format : format;
+        }
+
+        format = format.replace('t', '');
+
+        var farenheit = languages[currentLanguage].temperature.farenheit,
+            value = n._value,
+            output;
+
+        if(farenheit){
+            value = value*9/5 + 32;
+        }
+
+        // format the number
+        output = formatNumber(value, format, roundingFunction);
+
+        output = output + 'º';
 
         return output;
     }
@@ -672,6 +697,13 @@
         ordinal : function(){
             return formatNumeral(this,
                 'o',
+                Math.round
+            );
+        },
+
+        temperature : function(){
+            return formatNumeral(this,
+                't',
                 Math.round
             );
         }

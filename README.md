@@ -42,6 +42,10 @@ See [the english unit tests](https://github.com/adamwdraper/Numeral-js/blob/mast
 
 # Changelog
 
+### 1.5.6
+
+Temperature is now added to numeral. Temperature function and values predefined for some regions have been added too.
+
 ### 1.5.5
 
 Added currency default format property into all language files. 

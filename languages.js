@@ -199,6 +199,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -208,7 +212,7 @@
     }
     // Browser
     if (typeof window !== 'undefined' && this.numeral && this.numeral.language) {
-        this.numeral.language('de', language);
+        this.numeral.language('de-de', language);
     }
 }());
 /*! 
@@ -238,6 +242,10 @@
         currency: {
             symbol: '£',
             format: '$0,0.00'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -278,6 +286,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -287,7 +299,7 @@
     }
     // Browser
     if (typeof window !== 'undefined' && this.numeral && this.numeral.language) {
-        this.numeral.language('es', language);
+        this.numeral.language('es-es', language);
     }
 }());
 
@@ -319,6 +331,10 @@
         currency: {
             symbol: '$',
             format: '$0,0.00'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -328,7 +344,7 @@
     }
     // Browser
     if (typeof window !== 'undefined' && this.numeral && this.numeral.language) {
-        this.numeral.language('es', language);
+        this.numeral.language('es-cl', language);
     }
 }());
 
@@ -501,6 +517,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -571,6 +591,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 
@@ -580,7 +604,7 @@
     }
     // Browser
     if (typeof window !== 'undefined' && this.numeral && this.numeral.language) {
-        this.numeral.language('it', language);
+        this.numeral.language('it-it', language);
     }
 }());
 /*! 
@@ -748,6 +772,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 

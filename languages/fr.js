@@ -21,6 +21,10 @@
         currency: {
             symbol: '€',
             format: '0,0.00$'
+        },
+        temperature : {
+            farenheit : false,
+            format : '0,0.0'
         }
     };
 

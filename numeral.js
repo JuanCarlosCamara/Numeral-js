@@ -73,6 +73,8 @@
             output = formatTime(n, format);
         } else if (format.indexOf('t') > -1){
             output = formatTemperature(n, format, roundingFunction);
+        } else if (format.indexOf('km') > -1){
+            output = formatDistance();
         } else { // plain ol' numbers or bytes
             output = formatNumber(n._value, format, roundingFunction);
         }
@@ -201,6 +203,11 @@
         output = output + 'º';
 
         return output;
+    }
+
+    function formatDistance () {
+
+        return languages[currentLanguage].distance.milles;
     }
 
     function formatPercentage (n, format, roundingFunction) {
@@ -701,12 +708,19 @@
             );
         },
 
-        temperature : function(){
+        temperature : function(inputString){
             return formatNumeral(this,
                 't',
                 Math.round
             );
-        }
+        },
+
+        isMilles : function(){
+            return formatNumeral(this,
+                'km',
+                Math.round
+            );
+        },
 
     };
 

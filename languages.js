@@ -203,6 +203,9 @@
         temperature : {
             farenheit : false,
             format : '0,0.0'
+        },
+        distance : {
+            milles : false
         }
     };
 
@@ -290,6 +293,9 @@
         temperature : {
             farenheit : false,
             format : '0,0.0'
+        },
+        distance : {
+            milles : false
         }
     };
 
